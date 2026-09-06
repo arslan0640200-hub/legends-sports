@@ -1,1 +1,158 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Star Hosiery - Custom Sportswear Manufacturer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0b0f19; color: #ffffff; overflow-x: hidden; }
+
+        /* Header */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background: #0f172a; border-bottom: 1px solid #1e293b; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 16px; font-weight: bold; color: #f59e0b; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav ul li a { color: #cbd5e1; text-decoration: none; font-size: 13px; transition: 0.3s; }
+        nav ul li a:hover { color: #f59e0b; }
+        .btn-quote { background: #f59e0b; color: #000; padding: 8px 16px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 13px; }
+
+        @media(max-width: 768px) { nav { display: none; } }
+
+        /* Hero Section */
+        .hero { padding: 60px 20px; background: linear-gradient(rgba(11,15,25,0.85), rgba(11,15,25,0.95)), url('https://images.unsplash.com/photo-1517649763962-0c623266cfc0?q=80&w=1200') no-repeat center center/cover; text-align: center; border-bottom: 3px solid #f59e0b; }
+        .hero-tag { color: #f59e0b; font-size: 11px; font-weight: bold; letter-spacing: 1.5px; margin-bottom: 10px; }
+        .hero h1 { font-size: 32px; color: #f59e0b; margin-bottom: 8px; font-weight: 900; }
+        .hero h2 { font-size: 18px; color: #e2e8f0; margin-bottom: 15px; }
+        .hero p { font-size: 13px; color: #94a3b8; max-width: 600px; margin: 0 auto 25px auto; line-height: 1.6; }
+
+        /* Sports Icons */
+        .hero-icons { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 25px; }
+        .icon-chip { background: #1e293b; border: 1px solid #334155; padding: 6px 14px; border-radius: 6px; font-size: 12px; color: #f59e0b; font-weight: bold; }
+
+        /* Buttons */
+        .hero-btns { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+        .btn-wa { background: #25D366; color: white; padding: 12px 22px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 13px; display: inline-flex; align-items: center; gap: 8px; }
+        .btn-out { border: 2px solid #f59e0b; color: #f59e0b; padding: 12px 22px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 13px; }
+
+        /* Section Styling */
+        .section { padding: 45px 20px; text-align: center; background: #090d16; border-bottom: 1px solid #1e293b; }
+        .section h2 { font-size: 22px; margin-bottom: 6px; color: #fff; font-weight: 800; }
+        .section p { color: #94a3b8; margin-bottom: 25px; font-size: 12px; }
+
+        /* Products Grid */
+        .products-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; max-width: 800px; margin: 0 auto; }
+        @media(min-width: 768px) { .products-grid { grid-template-columns: repeat(4, 1fr); } }
+        .prod-card { background: #1e293b; padding: 15px 10px; border-radius: 8px; border: 1px solid #334155; font-weight: bold; font-size: 13px; color: #e2e8f0; transition: 0.3s; }
+        .prod-card:hover { border-color: #f59e0b; }
+
+        /* Sports Collection Cards */
+        .sports-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; max-width: 800px; margin: 0 auto; }
+        @media(min-width: 768px) { .sports-grid { grid-template-columns: repeat(3, 1fr); } }
+        .sport-box { background: linear-gradient(135deg, #1e293b, #0f172a); padding: 35px 15px; border-radius: 10px; border: 1px solid #334155; font-size: 15px; font-weight: bold; color: #f59e0b; }
+
+        /* Custom Box */
+        .custom-box { background: #0b0f19; padding: 30px 20px; text-align: left; max-width: 700px; margin: 0 auto; border-radius: 10px; border: 1px solid #1e293b; }
+        .custom-box h3 { color: #f59e0b; font-size: 18px; margin-bottom: 10px; }
+        .custom-box p { color: #94a3b8; font-size: 13px; line-height: 1.6; margin-bottom: 20px; text-align: left; }
+        .custom-list { list-style: none; margin-bottom: 20px; }
+        .custom-list li { font-size: 13px; color: #e2e8f0; margin-bottom: 8px; }
+
+        /* Footer */
+        footer { background: #05070c; padding: 30px 20px; text-align: center; border-top: 1px solid #1e293b; color: #64748b; font-size: 12px; }
+        footer p { margin-top: 8px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">⭐ ROYAL STAR HOSIERY</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="https://wa.me/923224312356" class="btn-quote" target="_blank">Get a Quote</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-tag">PREMIUM QUALITY | CUSTOM DESIGNS | WHOLESALE SUPPLIER</div>
+        <h1>ROYAL STAR HOSIERY</h1>
+        <h2>CUSTOM SPORTSWEAR MANUFACTURER</h2>
+        <p>We Manufacture High-Quality Sports Jerseys, Team Kits, Trousers, Caps, Hoodies, and More – With Your Logo, Your Colors, Your Style.</p>
+        
+        <div class="hero-icons">
+            <div class="icon-chip">🏏 Cricket</div>
+            <div class="icon-chip">⚽ Football</div>
+            <div class="icon-chip">🏐 Volleyball</div>
+            <div class="icon-chip">🏑 Hockey</div>
+            <div class="icon-chip">🏀 Basketball</div>
+            <div class="icon-chip">🤼 Kabaddi</div>
+        </div>
+
+        <div class="hero-btns">
+            <a href="https://wa.me/923224312356" class="btn-wa" target="_blank">WhatsApp: 03224312356</a>
+            <a href="https://wa.me/923224312356" class="btn-out" target="_blank">Get a Quote</a>
+        </div>
+    </section>
+
+    <!-- Complete Sportswear Solutions -->
+    <section class="section">
+        <h2>COMPLETE SPORTSWEAR SOLUTIONS</h2>
+        <p>From jerseys to uniforms, we provide everything you need under one roof.</p>
+        <div class="products-grid">
+            <div class="prod-card">Sports Jerseys</div>
+            <div class="prod-card">Team Kits</div>
+            <div class="prod-card">Trousers</div>
+            <div class="prod-card">Nikkers</div>
+            <div class="prod-card">Caps</div>
+            <div class="prod-card">Hoodies</div>
+            <div class="prod-card">Uppers</div>
+            <div class="prod-card">Hotel Shirts</div>
+        </div>
+    </section>
+
+    <!-- Sports Collection -->
+    <section class="section" style="background: #0b0f19;">
+        <h2>PLAY YOUR SPORT IN STYLE</h2>
+        <p>High-performance sportswear for every game, every team.</p>
+        <div class="sports-grid">
+            <div class="sport-box">🏏 CRICKET COLLECTION</div>
+            <div class="sport-box">⚽ FOOTBALL KITS</div>
+            <div class="sport-box">🏐 VOLLEYBALL UNIFORMS</div>
+            <div class="sport-box">🏑 HOCKEY GEAR</div>
+            <div class="sport-box">🏀 BASKETBALL WEAR</div>
+            <div class="sport-box">🤼 KABADDI SUITS</div>
+        </div>
+    </section>
+
+    <!-- Custom Design Section -->
+    <section class="section">
+        <div class="custom-box">
+            <h3>APNA LOGO, APNA COLOR, APNA DESIGN</h3>
+            <p>Chahe team kit ho, club jersey ho ya corporate uniform – hum banayen aapki choice ka kit, bilkul aapke design ke mutabiq. 100% custom sublimation printing.</p>
+            <ul class="custom-list">
+                <li>✔️ Your Logo & Custom Branding</li>
+                <li>✔️ Your Exact Custom Colors</li>
+                <li>✔️ Exclusive CorelDRAW Vector Designs</li>
+                <li>✔️ Custom Player Names & Numbers</li>
+                <li>✔️ 100% Sublimation Print Quality</li>
+            </ul>
+            <a href="https://wa.me/923224312356" class="btn-wa" target="_blank">Start Your Custom Design on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact WhatsApp: 03224312356 | Email: info@royalstarhosiery.com</p>
+        <p>Project Inshallah | Faisalabad, Pakistan</p>
+        <p>&copy; 2026 Royal Star Hosiery. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
