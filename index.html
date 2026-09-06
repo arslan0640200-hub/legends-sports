@@ -6,139 +6,129 @@
     <title>Royal Star Hosiery - Custom Sportswear Manufacturer</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #0b0f19; color: #ffffff; overflow-x: hidden; }
-        
+        body { background-color: #070a12; color: #ffffff; overflow-x: hidden; }
+
         /* Header */
-        header { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; background: #0f172a; border-bottom: 1px solid #1e293b; position: sticky; top: 0; z-index: 1000; }
-        .logo { font-size: 18px; font-weight: bold; color: #f59e0b; display: flex; align-items: center; gap: 8px; }
-        nav ul { display: flex; list-style: none; gap: 20px; }
-        nav ul li a { color: #cbd5e1; text-decoration: none; font-size: 14px; transition: 0.3s; }
-        nav ul li a:hover { color: #f59e0b; }
-        .btn-quote { background: #f59e0b; color: #000; padding: 8px 16px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 14px; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 15px 25px; background: #0b0f19; border-bottom: 1px solid #1e293b; position: sticky; top: 0; z-index: 1000; }
+        .logo-text { font-size: 15px; font-weight: 800; color: #f59e0b; letter-spacing: 0.5px; }
+        .btn-top { background: #f59e0b; color: #000; padding: 7px 14px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 12px; }
 
         /* Hero Section */
-        .hero { padding: 50px 20px; background: linear-gradient(135deg, #0f172a, #0b0f19); text-align: center; border-bottom: 3px solid #f59e0b; }
-        .hero h1 { font-size: 32px; color: #f59e0b; margin: 10px 0; letter-spacing: 1px; }
-        .hero h2 { font-size: 18px; color: #e2e8f0; margin-bottom: 15px; }
-        .hero p { font-size: 14px; color: #94a3b8; max-width: 600px; margin: 0 auto 25px auto; line-height: 1.5; }
-        
-        /* Sports Icons Bar */
-        .sports-icons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 25px; }
-        .icon-box { background: #1e293b; border: 1px solid #334155; padding: 10px 15px; border-radius: 8px; font-size: 12px; color: #f59e0b; font-weight: bold; }
+        .hero { padding: 40px 15px; background: linear-gradient(135deg, #0b0f19, #070a12); text-align: center; border-bottom: 3px solid #f59e0b; }
+        .hero-tag { color: #f59e0b; font-size: 9px; font-weight: bold; letter-spacing: 1.2px; margin-bottom: 8px; }
+        .hero h1 { font-size: 26px; color: #f59e0b; margin-bottom: 6px; font-weight: 950; }
+        .hero h2 { font-size: 15px; color: #e2e8f0; margin-bottom: 12px; font-weight: 700; }
+        .hero p { font-size: 12px; color: #94a3b8; max-width: 480px; margin: 0 auto 20px auto; line-height: 1.5; }
 
-        .hero-btns { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-        .btn-whatsapp { background: #25D366; color: white; padding: 10px 20px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; gap: 8px; }
-        .btn-outline { border: 2px solid #f59e0b; color: #f59e0b; padding: 10px 20px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 14px; }
+        /* Sports Badges */
+        .badges-row { display: flex; justify-content: center; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; }
+        .b-badge { background: #131b2e; border: 1px solid #27354d; padding: 5px 10px; border-radius: 6px; font-size: 11px; color: #f59e0b; font-weight: bold; }
 
-        /* Sections */
-        .section { padding: 40px 20px; text-align: center; background: #090d16; border-bottom: 1px solid #1e293b; }
-        .section h2 { font-size: 24px; margin-bottom: 8px; color: #fff; }
-        .section p { color: #94a3b8; margin-bottom: 25px; font-size: 14px; }
+        /* Buttons */
+        .hero-buttons { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+        .btn-whatsapp-main { background: #25D366; color: white; padding: 10px 18px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 12px; display: inline-flex; align-items: center; gap: 6px; }
+        .btn-outline-main { border: 2px solid #f59e0b; color: #f59e0b; padding: 10px 18px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 12px; }
 
-        /* Products Grid */
-        .grid-products { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; max-width: 700px; margin: 0 auto; }
-        @media(min-width: 768px) { .grid-products { grid-template-columns: repeat(4, 1fr); } }
-        .product-card { background: #1e293b; padding: 15px 10px; border-radius: 8px; border: 1px solid #334155; font-weight: bold; font-size: 13px; color: #e2e8f0; transition: 0.3s; }
-        .product-card:hover { border-color: #f59e0b; }
+        /* Sections General */
+        .content-section { padding: 35px 15px; text-align: center; background: #090d16; border-bottom: 1px solid #161e31; }
+        .content-section h2 { font-size: 19px; margin-bottom: 5px; color: #fff; font-weight: 800; }
+        .content-section p { color: #94a3b8; margin-bottom: 18px; font-size: 11px; }
+
+        /* Product Solutions Grid */
+        .solutions-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; max-width: 550px; margin: 0 auto; }
+        @media(min-width: 768px) { .solutions-grid { grid-template-columns: repeat(4, 1fr); } }
+        .sol-card { background: #131b2e; padding: 12px 8px; border-radius: 8px; border: 1px solid #1e293b; font-weight: bold; font-size: 12px; color: #e2e8f0; }
 
         /* Sports Collection Grid */
-        .sports-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; max-width: 800px; margin: 0 auto; }
-        @media(min-width: 768px) { .sports-grid { grid-template-columns: repeat(3, 1fr); } }
-        .sport-card { background: linear-gradient(135deg, #1e293b, #0f172a); padding: 30px 15px; border-radius: 10px; border: 1px solid #334155; font-size: 16px; font-weight: bold; color: #f59e0b; }
+        .sports-grid-box { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; max-width: 550px; margin: 0 auto; }
+        @media(min-width: 768px) { .sports-grid-box { grid-template-columns: repeat(3, 1fr); } }
+        .sp-card { background: linear-gradient(135deg, #161e31, #0b0f19); padding: 22px 10px; border-radius: 8px; border: 1px solid #27354d; font-size: 13px; font-weight: bold; color: #f59e0b; }
 
-        /* Custom Design Section */
-        .custom-section { background: #0b0f19; padding: 40px 20px; text-align: left; max-width: 800px; margin: 0 auto; border-radius: 10px; border: 1px solid #1e293b; }
-        .custom-section h2 { color: #f59e0b; font-size: 22px; margin-bottom: 10px; }
-        .custom-section p { color: #94a3b8; font-size: 14px; line-height: 1.6; margin-bottom: 20px; }
-        .features-list { list-style: none; margin-bottom: 20px; }
-        .features-list li { font-size: 14px; color: #e2e8f0; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+        /* Custom Box Details */
+        .custom-container { background: #0b0f19; padding: 20px 15px; text-align: left; max-width: 550px; margin: 0 auto; border-radius: 10px; border: 1px solid #1e293b; }
+        .custom-container h3 { color: #f59e0b; font-size: 15px; margin-bottom: 6px; }
+        .custom-container p { color: #94a3b8; font-size: 11px; line-height: 1.5; margin-bottom: 12px; text-align: left; }
+        .check-list { list-style: none; margin-bottom: 15px; }
+        .check-list li { font-size: 11px; color: #e2e8f0; margin-bottom: 5px; }
 
         /* Footer */
-        footer { background: #070a10; padding: 30px 20px; text-align: center; border-top: 1px solid #1e293b; color: #64748b; font-size: 13px; }
-        footer p { margin-top: 10px; }
+        footer { background: #05070c; padding: 25px 15px; text-align: center; border-top: 1px solid #161e31; color: #64748b; font-size: 11px; }
+        footer p { margin-top: 6px; }
     </style>
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <div class="logo">⭐ ROYAL STAR HOSIERY</div>
-        <nav style="display: none; @media(min-width: 768px){display: block;}">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Collection</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="https://wa.me/923224312356" class="btn-quote" target="_blank">Get a Quote</a>
+        <div class="logo-text">⭐ ROYAL STAR HOSIERY</div>
+        <a href="https://wa.me/923224312356" class="btn-top" target="_blank">Get a Quote</a>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <p style="color: #f59e0b; font-weight: bold; font-size: 11px; letter-spacing: 1.5px; margin-bottom: 8px;">PREMIUM QUALITY | CUSTOM DESIGNS | WHOLESALE SUPPLIER</p>
+        <div class="hero-tag">PREMIUM QUALITY | CUSTOM DESIGNS | WHOLESALE SUPPLIER</div>
         <h1>ROYAL STAR HOSIERY</h1>
         <h2>CUSTOM SPORTSWEAR MANUFACTURER</h2>
         <p>We Manufacture High-Quality Sports Jerseys, Team Kits, Trousers, Caps, Hoodies, and More – With Your Logo, Your Colors, Your Style.</p>
         
-        <div class="sports-icons">
-            <div class="icon-box">🏏 Cricket</div>
-            <div class="icon-box">⚽ Football</div>
-            <div class="icon-box">🏐 Volleyball</div>
-            <div class="icon-box">🏑 Hockey</div>
-            <div class="icon-box">🏀 Basketball</div>
-            <div class="icon-box">🤼 Kabaddi</div>
+        <div class="badges-row">
+            <div class="b-badge">🏏 Cricket</div>
+            <div class="b-badge">⚽ Football</div>
+            <div class="b-badge">🏐 Volleyball</div>
+            <div class="b-badge">🏑 Hockey</div>
+            <div class="b-badge">🏀 Basketball</div>
+            <div class="b-badge">🤼 Kabaddi</div>
         </div>
 
-        <div class="hero-btns">
-            <a href="https://wa.me/923224312356" class="btn-whatsapp" target="_blank">WhatsApp Us: 03224312356</a>
-            <a href="https://wa.me/923224312356" class="btn-outline" target="_blank">Get a Quote</a>
+        <div class="hero-buttons">
+            <a href="https://wa.me/923224312356" class="btn-whatsapp-main" target="_blank">WhatsApp: 03224312356</a>
+            <a href="https://wa.me/923224312356" class="btn-outline-main" target="_blank">Get a Quote</a>
         </div>
     </section>
 
     <!-- Complete Sportswear Solutions -->
-    <section class="section">
+    <section class="content-section">
         <h2>COMPLETE SPORTSWEAR SOLUTIONS</h2>
         <p>From jerseys to uniforms, we provide everything you need under one roof.</p>
-        <div class="grid-products">
-            <div class="product-card">Sports Jerseys</div>
-            <div class="product-card">Team Kits</div>
-            <div class="product-card">Trousers</div>
-            <div class="product-card">Nikkers</div>
-            <div class="product-card">Caps</div>
-            <div class="product-card">Hoodies</div>
-            <div class="product-card">Uppers</div>
-            <div class="product-card">Hotel Shirts</div>
+        <div class="solutions-grid">
+            <div class="sol-card">Sports Jerseys</div>
+            <div class="sol-card">Team Kits</div>
+            <div class="sol-card">Trousers</div>
+            <div class="sol-card">Nikkers</div>
+            <div class="sol-card">Caps</div>
+            <div class="sol-card">Hoodies</div>
+            <div class="sol-card">Uppers</div>
+            <div class="sol-card">Hotel Shirts</div>
         </div>
     </section>
 
     <!-- Sports Collection -->
-    <section class="section" style="background: #0b0f19;">
+    <section class="content-section" style="background: #070a12;">
         <h2>PLAY YOUR SPORT IN STYLE</h2>
         <p>High-performance sportswear for every game, every team.</p>
-        <div class="sports-grid">
-            <div class="sport-card">🏏 CRICKET</div>
-            <div class="sport-card">⚽ FOOTBALL</div>
-            <div class="sport-card">🏐 VOLLEYBALL</div>
-            <div class="sport-card">🏑 HOCKEY</div>
-            <div class="sport-card">🏀 BASKETBALL</div>
-            <div class="sport-card">🤼 KABADDI</div>
+        <div class="sports-grid-box">
+            <div class="sp-card">🏏 CRICKET</div>
+            <div class="sp-card">⚽ FOOTBALL</div>
+            <div class="sp-card">🏐 VOLLEYBALL</div>
+            <div class="sp-card">🏑 HOCKEY</div>
+            <div class="sp-card">🏀 BASKETBALL</div>
+            <div class="sp-card">🤼 KABADDI</div>
         </div>
     </section>
 
     <!-- Custom Design Section -->
-    <section class="section">
-        <div class="custom-section">
-            <h2>APNA LOGO, APNA COLOR, APNA DESIGN</h2>
+    <section class="content-section">
+        <div class="custom-container">
+            <h3>APNA LOGO, APNA COLOR, APNA DESIGN</h3>
             <p>Chahe team kit ho, club jersey ho ya corporate uniform – hum banayen aapki choice ka kit, bilkul aapke design ke mutabiq. 100% custom sublimation printing.</p>
-            <ul class="features-list">
-                <li>✔️ Your Logo & Custom Crests</li>
-                <li>✔️ Your Custom Colors</li>
-                <li>✔️ Exclusive Vector Designs (CorelDRAW)</li>
-                <li>✔️ Your Name & Numbering</li>
+            <ul class="check-list">
+                <li>✔️ Your Logo & Custom Branding</li>
+                <li>✔️ Your Exact Custom Colors</li>
+                <li>✔️ Exclusive CorelDRAW Vector Designs</li>
+                <li>✔️ Custom Player Names & Numbers</li>
                 <li>✔️ 100% Sublimation Print Quality</li>
             </ul>
-            <a href="https://wa.me/923224312356" class="btn-whatsapp" target="_blank">Start Your Custom Design</a>
+            <a href="https://wa.me/923224312356" class="btn-whatsapp-main" target="_blank">Start Your Custom Design</a>
         </div>
     </section>
 
